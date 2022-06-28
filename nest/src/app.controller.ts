@@ -9,4 +9,14 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/nest')
+  getNest(): string {
+    return this.appService.getHello();
+  }
+
+  @Get('/api/nest')
+  getApiNest(): string {
+    return this.appService.getHello();
+  }
 }

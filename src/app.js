@@ -1,12 +1,12 @@
 const express = require('express')
-const app = express()
+const expressApp = express()
 
-app.get('/', (req, res) => {
+expressApp.get('/', (req, res) => {
 	res.send('Hello World from Express!')
 })
 
-app.get('/express', (req, res) => {
+expressApp.get('/express', (req, res) => {
 	res.send('Hello World from Express!')
 })
 
-module.exports = { app }
+module.exports = { expressApp }
